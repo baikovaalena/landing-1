@@ -7,9 +7,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    margin-top: 32px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: 32px 32px 0px 32px;
 }
 
 .header__logo {
@@ -42,7 +40,6 @@ body {
 
 .order__title-project {
     display: flex;
-    justify-content: end;
     justify-content: space-between;
     margin-bottom: 40px;
 }
@@ -52,11 +49,9 @@ body {
     text-transform: uppercase;
     font-weight: 400;
     line-height: 120%;
-    /* 86.4px */
 }
 
 .order__project {
-    font-family: Helvetica;
     font-size: 18px;
     font-weight: 400;
     display: flex;
@@ -74,7 +69,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     gap: 200px;
-
 }
 
 .order__subimage {
@@ -83,11 +77,9 @@ body {
 }
 
 .order__subtitle {
-    font-family: Arial;
     font-size: 20px;
     font-weight: 400;
     line-height: 140%;
-    /* 28px */
     margin-top: 40px;
 }
 
@@ -103,18 +95,15 @@ body {
 }
 
 .history__title {
-    font-family: Helvetica;
     font-size: 48px;
     font-style: normal;
     line-height: normal;
 }
 
 .history__about-the-team {
-    font-family: Helvetica;
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
-    /* 22.4px */
     display: flex;
     justify-content: space-between;
     gap: 16px;
@@ -133,7 +122,6 @@ body {
 }
 
 .history__year {
-    font-family: Helvetica;
     font-size: 36px;
     font-style: normal;
     line-height: normal;
@@ -141,10 +129,8 @@ body {
 }
 
 .history__sub-year {
-    font-family: Roboto;
     font-size: 16px;
     line-height: 140%;
-    /* 22.4px */
 }
 
 .operating-procedure__main {
@@ -153,7 +139,6 @@ body {
 }
 
 .operating-procedure__h4 {
-    font-family: Helvetica;
     font-size: 48px;
     font-style: normal;
     line-height: normal;
@@ -162,11 +147,9 @@ body {
 }
 
 .operating-procedure__p {
-    font-family: Helvetica;
     font-size: 16px;
     font-style: normal;
     line-height: 140%;
-    /* 22.4px */
     display: flex;
     flex-grow: 0.4;
 }
@@ -184,21 +167,236 @@ body {
 }
 
 .operating-procedure__idea {
-    font-family: Helvetica;
     font-size: 36px;
     font-weight: 400;
     width: 328px;
     height: 100px;
     text-align: left;
-
 }
 
 .operating-procedure__description {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 140%;
-    /* 22.4px */
     width: 328px;
     height: 100px;
 }
+
+.project {
+    margin-top: 140px;
+}
+
+.project__name {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 32px;
+}
+
+.project__image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.six__image {
+    width: 445px;
+    height: 580px;
+}
+
+.review {
+    margin-top: 140px;
+}
+
+.review__project-name {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.review__name-name {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.review__icon {
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+}
+
+.review__people {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 32px;
+}
+
+.review__name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    border: 1px solid #000;
+    width: 445px;
+    height: 327px;
+}
+
+.review__comment {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: center;
+}
+
+.feedback {
+    margin-top: 120px;
+    display: flex;
+    gap: 0 100px;
+}
+
+.feedback__img {
+    width: 562px;
+    height: 566px;
+}
+
+.feedback__order {
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.feedback__sub-order {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 32px;
+}
+
+.feedback__text {
+    flex-grow: 1;
+}
+
+.feedback__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.form__input {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 16px;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 5px;
+    width: 562px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form__button {
+    margin-top: 35px;
+    font-size: 18px;
+    width: 170px;
+    height: 40px;
+    padding: 12px 20px;
+    text-align: center;
+    background: rgb(0, 0, 0);
+    color: #FFF;
+}
+
+.form__button:hover {
+    background: rgb(91, 73, 73);
+    color: #FFF;
+}
+
+.feedback__appstore-google {
+    display: flex;
+    margin-top: 40px;
+    width: 121px;
+    height: 36px;
+}
+.googleplay {
+    margin-left: 10px;
+
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 120px;
+    padding-bottom: 20px;
+}
+
+.footer__rights{
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+.footer__confidentiality{
+    color: black ;
+    font-size: 18px;
+}
+.footer__sub-confidentiality{
+    color: black ;
+    font-size: 18px;
+}
+
+.footer__social-media{
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-right:5px;
+    margin-left: 10px;
+    color: black ;
+}
+
+
+@media (max-width: 767px) {
+    .review__people {
+        flex-direction: column;
+    }
+    .review__name {
+        width: 650px;
+        height: 350px;
+    }
+    .operating-procedure {
+        flex-direction: column;
+    }
+    .feedback{
+        flex-direction: column;
+        gap: 50px 0;
+    }
+    .footer{
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: stretch;
+        align-self: flex-start;
+        gap: 15px 0;
+    }
+
+}
+
+
+
+/*
+.flex-container{
+    display: flex;
+    flex-direction: column ;
+    gap: 1px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-item{
+    align-self: center;
+}*/
