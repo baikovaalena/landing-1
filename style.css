@@ -7,7 +7,7 @@ body {
 .header {
     display: flex;
     justify-content: space-between;
-    margin: 32px 32px 0px 32px;
+    margin: 32px 32px 0 32px;
 }
 
 .header__logo {
@@ -23,7 +23,7 @@ body {
     flex-direction: column;
     gap: 8px;
     margin-top: 12px;
-    margin-left: 600px;
+
 }
 
 .number {
@@ -33,9 +33,7 @@ body {
 }
 
 .order {
-    margin-top: 40px;
-    margin-left: 32px;
-    margin-right: 32px;
+    margin: 40px 32px 0 32px;
 }
 
 .order__title-project {
@@ -55,7 +53,6 @@ body {
     font-size: 18px;
     font-weight: 400;
     display: flex;
-    justify-content: end;
     align-self: flex-end;
 }
 
@@ -81,6 +78,8 @@ body {
     font-weight: 400;
     line-height: 140%;
     margin-top: 40px;
+    width: 445px;
+
 }
 
 .order__image {
@@ -89,18 +88,7 @@ body {
 }
 
 .history {
-    margin-top: 150px;
-    margin-left: 32px;
-    margin-right: 32px;
-}
-
-.history__title {
-    font-size: 48px;
-    font-style: normal;
-    line-height: normal;
-}
-
-.history__about-the-team {
+    margin: 150px 32px 0 32px;
     font-size: 16px;
     font-weight: 400;
     line-height: 140%;
@@ -109,10 +97,24 @@ body {
     gap: 16px;
 }
 
+.history__title {
+    font-size: 48px;
+    line-height: normal;
+    width: 562px;
+}
+
 .history__info {
     display: flex;
     flex-direction: column;
     gap: 16px;
+}
+
+.history__team,.history__target,.history__material{
+    width: 446px;
+}
+
+.history__sub-year{
+    width: 146px;
 }
 
 .history__achievements {
@@ -123,7 +125,6 @@ body {
 
 .history__year {
     font-size: 36px;
-    font-style: normal;
     line-height: normal;
     padding-top: 20px;
 }
@@ -133,40 +134,38 @@ body {
     line-height: 140%;
 }
 
-.operating-procedure__main {
+.works__main {
     margin-top: 120px;
     display: flex;
 }
 
-.operating-procedure__h4 {
+.works__h4 {
     font-size: 48px;
-    font-style: normal;
     line-height: normal;
     display: flex;
     flex-grow: 1;
 }
 
-.operating-procedure__p {
+.works__p {
     font-size: 16px;
-    font-style: normal;
     line-height: 140%;
     display: flex;
     flex-grow: 0.4;
 }
 
-.operating-procedure__algorithm {
+.works__algorithm {
     margin-top: 50px;
     display: flex;
     flex-direction: column;
 }
 
-.operating-procedure__title {
+.works__title {
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
 }
 
-.operating-procedure__idea {
+.works__idea {
     font-size: 36px;
     font-weight: 400;
     width: 328px;
@@ -174,7 +173,7 @@ body {
     text-align: left;
 }
 
-.operating-procedure__description {
+.works__description {
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
@@ -182,42 +181,40 @@ body {
     height: 100px;
 }
 
-.project {
+.projects {
     margin-top: 140px;
 }
 
-.project__name {
+.projects__name {
     font-size: 48px;
     font-weight: 400;
     margin-bottom: 32px;
 }
 
-.project__image {
+.projects__image {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 24px;
 }
 
-.six__image {
+.image {
     width: 445px;
     height: 580px;
 }
 
-.review {
+.reviews {
     margin-top: 140px;
 }
 
-.review__project-name {
+.reviews__project-name {
     font-size: 48px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
-.review__name-name {
+.review__name {
     font-size: 21px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
@@ -228,13 +225,13 @@ body {
     margin-top: 40px;
 }
 
-.review__people {
+.reviews__people {
     display: flex;
     justify-content: space-between;
     margin-top: 32px;
 }
 
-.review__name {
+.reviews__name {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -246,9 +243,9 @@ body {
 
 .review__comment {
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 140%;
+    width: 365px;
     text-align: center;
 }
 
@@ -265,14 +262,12 @@ body {
 
 .feedback__order {
     font-size: 48px;
-    font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
 
 .feedback__sub-order {
     font-size: 16px;
-    font-style: normal;
     font-weight: 400;
     line-height: 140%;
     margin-top: 32px;
@@ -347,10 +342,6 @@ body {
     color: black ;
     font-size: 18px;
 }
-.footer__sub-confidentiality{
-    color: black ;
-    font-size: 18px;
-}
 
 .footer__social-media{
     font-size: 18px;
@@ -360,43 +351,80 @@ body {
     color: black ;
 }
 
-
 @media (max-width: 767px) {
-    .review__people {
+    .reviews__people {
         flex-direction: column;
     }
-    .review__name {
-        width: 650px;
-        height: 350px;
-    }
-    .operating-procedure {
+
+    .works {
         flex-direction: column;
     }
-    .feedback{
+
+    .feedback {
         flex-direction: column;
         gap: 50px 0;
     }
-    .footer{
+
+    .footer {
+        width: 375px;
         flex-direction: column-reverse;
         text-align: center;
         align-items: stretch;
-        align-self: flex-start;
         gap: 15px 0;
     }
 
+    .projects__image {
+        flex-wrap: nowrap;
+    }
+
+    .works__title {
+        justify-content: flex-start;
+    }
+
+    .works__main {
+        flex-direction: column;
+    }
+    .history{
+        flex-direction: column;
+    }
+    .order__image{
+    display: none;
+    }
+    .order__sub{
+        gap: 15px 0;
+    }
+    .order__project{
+        align-self: flex-start;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: normal;
+        color:  #212529;
+    }
+    .order__title-project{
+        flex-direction: column;
+        gap: 15px 0;
+        margin: 0;
+    }
+    .header{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .header__logo{
+        width: 150px;
+        height: 150px;
+    }
+    .menu{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+        color: black ;
+    }
+    .number{
+        font-size: 25px;
+        font-weight: 400;
+        line-height: normal;
+        color: black ;
+        align-self: center;
+        margin-left: 25px;
+    }
 }
-
-
-
-/*
-.flex-container{
-    display: flex;
-    flex-direction: column ;
-    gap: 1px;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
-}
-.flex-item{
-    align-self: center;
-}*/
